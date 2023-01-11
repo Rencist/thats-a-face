@@ -21,4 +21,7 @@ while True:
     print(face_coordinates)
 
     cv2.imshow('That A Face', frame)
-    cv2.waitKey(1)
+    key = cv2.waitKey(1)
+    
+    if key==27:
+        break 
